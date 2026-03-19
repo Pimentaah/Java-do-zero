@@ -71,7 +71,7 @@ public class Teste {
             System.out.println("Siga para a próxima etapa!");
         }
         
-        asd
+        
     }
 }
 
