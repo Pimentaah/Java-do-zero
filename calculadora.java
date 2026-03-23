@@ -28,7 +28,10 @@ public class calculadora {
         else if (operacao.equalsIgnoreCase("Multiplicar")){
            return num1 * num2; 
         }
-        return 0;
+        else {
+            System.out.println("Operação inválida");
+            return 0;
+        }
     }
 }
     
