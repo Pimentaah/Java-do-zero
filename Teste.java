@@ -24,7 +24,7 @@ public class Teste {
         if (pessoa1.graduado.equalsIgnoreCase("Sim")) {
             
             System.out.println("Parabéns pela graduação!");
-
+            
         } else { 
             System.out.println("Sinto muito, mas precisamos que tenha Ensino médio completo");
 
@@ -37,6 +37,7 @@ public class Teste {
         if (pessoa1.formacao.equalsIgnoreCase("Ensino médio incompleto")) {
             System.out.print("Você precisa ter Ensino médio completo para prosseguir!");
             pessoa1.formacao = leitor.nextLine();
+            return;
         }
 
         else if (pessoa1.formacao.equalsIgnoreCase("Ensino superior cursando")) {
@@ -50,7 +51,7 @@ public class Teste {
             pessoa1.formacao = leitor.nextLine();
         }
 
-        System.out.println("Tem experiência na área de Tecnológica?");
+        System.out.println("Tem experiência profissional na área de Tecnológica?");
         pessoa1.experiencia = leitor.nextLine();
 
         if (pessoa1.experiencia.equalsIgnoreCase("Sim")) {
@@ -68,9 +69,10 @@ public class Teste {
             System.out.println("Descreva um pouco sobre suas experiências: ");
             pessoa1.experiencia = leitor.nextLine();
         } else {
-            System.out.println("Siga para a próxima etapa!");
+            System.out.println("Buscamos alguém com breve experiência profissional. ");
+            return;
         }
-        
+        System.out.println("Passe para a próxima etapa");
         
     }
 }
