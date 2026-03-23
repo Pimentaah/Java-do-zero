@@ -27,7 +27,6 @@ public class Teste {
             
         } else { 
             System.out.println("Sinto muito, mas precisamos que tenha Ensino médio completo");
-
             return;
         }
         
@@ -57,22 +56,22 @@ public class Teste {
         if (pessoa1.experiencia.equalsIgnoreCase("Sim")) {
             System.out.println("Fale um pouco de como foi sua experiência: ");
             pessoa1.experiencia = leitor.nextLine();
-        } else {
-
+        }else {
         }
-         
-            
+        
         System.out.println("Tem alguma experiência profissional? ");
         pessoa1.experiencia = leitor.nextLine();
 
-        if (pessoa1.experiencia.equalsIgnoreCase("Sim ")) {
+        if (pessoa1.experiencia.equalsIgnoreCase("Sim")) {
             System.out.println("Descreva um pouco sobre suas experiências: ");
             pessoa1.experiencia = leitor.nextLine();
         } else {
             System.out.println("Buscamos alguém com breve experiência profissional. ");
             return;
         }
-        System.out.println("Passe para a próxima etapa");
+        System.out.println("Passe para a próxima etapa!");
+            
+        
         
     }
 }
